@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Item;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 
@@ -20,7 +21,11 @@ class ItemController extends Controller
     }
 
 
-    public function store(Request $request)
+    /**
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function store(Request $request): JsonResponse
     {
         $request->validate([
             'item' => 'required|array',
@@ -29,9 +34,11 @@ class ItemController extends Controller
 
         $name = $request->get('item')['name'];
 
-        return Item::query()->create([
+        $item = Item::query()->create([
             'name' => $name
         ]);
+
+        return response()->json(['data' => $item], 201);
     }
 
 
@@ -41,7 +48,12 @@ class ItemController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    /**
+     * @param Request $request
+     * @param $id
+     * @return JsonResponse
+     */
+    public function update(Request $request, $id): JsonResponse
     {
 
         $item = Item::findOrFail($id);
@@ -52,21 +64,28 @@ class ItemController extends Controller
         ]);
 
         $data = $request->only(['name', 'completed']);
-        $data['completed_at'] = $item->completed_at ?? ($data['completed'] ? Carbon::now() : null);
+        if (!isset($data['completed'])){
+            $data['completed'] = !$item->completed;
+        }
+        $data['completed_at'] = $data['completed'] ? Carbon::now() : null;
 
         $item->update($data);
 
-        return $item;
+        return response()->json(['data' => $item], 200);
     }
 
+
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return JsonResponse
      */
     public function destroy($id)
     {
-        //
+        $item = Item::findOrFail($id);
+
+        if ($item->delete()) {
+            return response()->json(['data' => null, 'status' => true, 'message' => 'Item Deleted'], 200);
+        }
+        return response()->json(['data' => null, 'status' => false, 'message' => 'Failed Deleting the Item'], 500);
     }
 }

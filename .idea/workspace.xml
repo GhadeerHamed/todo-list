@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3ba39ec-f13a-459f-bb13-663a4dab58d3" name="Default Changelist" comment="" />
+    <list default="true" id="d3ba39ec-f13a-459f-bb13-663a4dab58d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/vue/addItemForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/vue/app.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/vue/listItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/vue/listView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ItemController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +25,16 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,16 +146,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1shP0TCXXOa1bOsaNgmQrVwF1D3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Middleware" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -153,17 +183,49 @@
       <option name="presentableId" value="Default" />
       <updated>1621321624350</updated>
       <workItem from="1621321625375" duration="1123000" />
-      <workItem from="1621328992678" duration="5290000" />
+      <workItem from="1621328992678" duration="6373000" />
+      <workItem from="1621339438400" duration="6572000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1621336641648">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621336641648" />
+    <state x="393" y="0" key="CommitChangelistDialog2" timestamp="1621339132425">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1621339132425" />
+    <state width="1493" height="286" key="GridCell.Tab.0.bottom" timestamp="1621339155462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621339155462" />
+    <state width="1493" height="286" key="GridCell.Tab.0.center" timestamp="1621339155462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621339155462" />
+    <state width="1493" height="286" key="GridCell.Tab.0.left" timestamp="1621339155462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621339155462" />
+    <state width="1493" height="286" key="GridCell.Tab.0.right" timestamp="1621339155462">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="286" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621339155462" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1621339017084">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1621339017084" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1621339425700">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621339425700" />
   </component>
 </project>
